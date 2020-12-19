@@ -1,0 +1,386 @@
+Option Compare Database
+Option Explicit
+
+Sub s00_delete_all_info()
+    ' ===========================
+    ' Delete data from all tables
+    ' ===========================
+    
+    ' YOUR CODE HERE
+    '
+    '
+
+End Sub
+
+
+Sub s01_create_table_data()
+    ' =========================================
+    ' Create a table named 'data'
+    ' Fields :
+    ' - id
+    ' - date | format : yyyy/mm/dd
+    ' - stock_name
+    ' - stock_value
+    ' =========================================
+    
+    ' YOUR CODE HERE
+    '
+    '
+
+End Sub
+
+
+Sub s02_feed_data()
+    ' =============================
+    ' Feed data table from csv file
+    ' with the data from a company
+    ' of your choice
+    '
+    ' 1. Change the path to match
+    ' with your csv file location
+    ' =============================
+    
+    ' Declarations
+    Dim STR_PATH As String
+    
+    ' Set constants
+    STR_PATH = "Users\Pro\Student\data.csv"
+    
+    ' YOUR CODE HERE
+    '
+    '
+
+End Sub
+
+
+Sub s03_get_data()
+    ' ==============================================
+    ' Get data from a specific table Access
+    '
+    ' 1. Change the name of STR_TABLE_NAME
+    ' to match with one of your tables
+    '
+    ' 2. Complete the corresponding function
+    ' f03_get_data()
+    '
+    ' 3. Debug.print the data obtained from
+    ' the function f03_get_data()
+    '
+    ' 4. Export the data in a file (RTF, CSV or PDF)
+    ' ==============================================
+    
+    ' Declarations
+    Dim STR_TABLE_NAME As String
+    
+    ' Set constants
+    STR_TABLE_NAME = "foo"
+    
+    ' YOUR CODE HERE
+    '
+    '
+
+End Sub
+
+
+Function f03_get_data(STR_TABLE_NAME As String)
+    ' =====================================
+    ' 1. Get the data from a specific table
+    ' passed as input in the function
+    '
+    ' 2. Return the data
+    ' =====================================
+    
+    ' YOUR CODE HERE
+    '
+    '
+
+End Function
+
+
+Sub s04_create_table_ratios()
+    ' =========================================
+    ' Create a table named 'ratios'
+    '
+    ' Fields :
+    ' - id
+    ' - ratio_name
+    ' - ratio_value
+    ' - stock_name
+    ' =========================================
+    
+    ' YOUR CODE HERE
+    '
+    '
+
+End Sub
+
+
+Sub s05_populate_table_ratios()
+    ' =========================================
+    ' Insert an entry for each pair of
+    ' stock_name and ratio_name
+    ' with the value NULL for the ratio_value
+    '
+    ' Measures to add (names only for now):
+    ' - Average_rolling_10d
+    ' - Average_rolling_30d
+    ' - Average_rolling_1y
+    ' - Max
+    ' - Min
+    ' - Volatility_rolling_10d
+    ' - Volatility_rolling_1y
+    '
+    ' =========================================
+    
+    ' YOUR CODE HERE
+    '
+    '
+
+End Sub
+
+
+Sub s06_update_ratios()
+    ' =========================================
+    ' Update the table ratios based on the
+    ' values of the table 'data'
+    ' =========================================
+    
+    ' YOUR CODE HERE
+    '
+    '
+
+End Sub
+
+
+Function f061_compute_average_rolling(str_stock_name As String, int_period As Integer)
+    ' =========================================
+    ' Compute and return the average value of a
+    ' stock based on the N last days/years
+    ' depending on the value of input 'period'
+    ' =========================================
+    
+    ' YOUR CODE HERE
+    '
+    '
+
+End Function
+
+
+Function f062_compute_volatility_rolling(str_stock_name As String, int_period As Integer)
+    ' =========================================
+    ' Compute and return the volatility of a
+    ' stock based on the N last days/years
+    ' depending on the value of input 'period'
+    ' =========================================
+    
+    ' YOUR CODE HERE
+    '
+    '
+
+End Function
+
+
+Sub s07_create_table_ratios_hist()
+    ' =========================================
+    ' Create a table named 'ratios_hist'
+    ' Fields :
+    ' - id
+    ' - datetime | format : yyyy/mm/dd hh:nn:ss
+    ' - ratio_name
+    ' - ratio_value
+    ' - stock_name
+    ' =========================================
+    
+    ' YOUR CODE HERE
+    '
+    '
+
+End Sub
+
+
+Sub s08_create_table_warning()
+    ' =========================================
+    ' Create a table named 'warnings'
+    ' Fields :
+    ' - id
+    ' - ratio_name
+    ' - ratio_value
+    ' - warning_type
+    ' - stock_name
+    ' =========================================
+    
+    ' YOUR CODE HERE
+    '
+    '
+
+End Sub
+
+
+Sub s09_populate_table_warning()
+    ' ============================================
+    ' Add an entry to the table 'warning' for each
+    ' pair of : ratio_name and stock_name
+    ' Set the ratio_value and warning_type to NULL
+    ' ============================================
+    
+    ' YOUR CODE HERE
+    '
+    '
+
+End Sub
+
+
+Sub s10_update_ratios_if_limit_breached()
+    ' ============================================
+    ' Update the warning table only if one
+    ' of the following limit is breached for the
+    ' data of the current day
+    '
+    ' Warning types:
+    ' - limit_max : ratio value above a threshold
+    ' - limit_min : ratio value below a threshold
+    ' - NULL : otherwise
+    ' ============================================
+    
+    ' YOUR CODE HERE
+    '
+    '
+  
+End Sub
+
+
+Sub s11_log_ratios_hist()
+    ' =========================================
+    ' Insert the ratio values for each pair of
+    ' stock_name and ratio_name in the table
+    ' 'ratios_hist' along with the current
+    ' datetime
+    ' =========================================
+
+    ' YOUR CODE HERE
+    '
+    '
+
+End Sub
+
+
+Sub s12_create_table_static_investors()
+    ' =========================================
+    ' Create a table named 'static_investors'
+    '
+    ' Fields :
+    ' - id
+    ' - name
+    ' - birth
+    ' =========================================
+    
+    ' YOUR CODE HERE
+    '
+    '
+
+End Sub
+
+
+Sub s13_create_table_portfolios()
+    ' =========================================
+    ' Create a table named 'portfolios'
+    '
+    ' Fields :
+    ' - id
+    ' - investor_id
+    ' - stock_name
+    ' - quantity
+    ' =========================================
+    
+    ' YOUR CODE HERE
+    '
+    '
+
+End Sub
+
+
+Sub s14_feed_static_investors()
+    ' ===========================================
+    ' Feed table static_investors from a csv file
+    ' with arbitrary data
+    ' ===========================================
+    
+    ' YOUR CODE HERE
+    '
+    '
+
+End Sub
+
+
+Sub s15_feed_portfolios()
+    ' ===========================================
+    ' Feed table portfolios from a csv file
+    ' with arbitrary data
+    ' ===========================================
+    
+    ' YOUR CODE HERE
+    '
+    '
+
+End Sub
+
+
+Sub s16_create_table_investors_metrics()
+    ' =========================================
+    ' Create a table named 'investors_metrics'
+    '
+    ' Fields :
+    ' - investor_id
+    ' - stocks_number_of
+    ' - stocks_total_value
+    ' - stocks_average_value
+    ' =========================================
+    
+    ' YOUR CODE HERE
+    '
+    '
+
+End Sub
+
+
+Sub s17_populate_table_investors_metrics()
+    ' =========================================
+    ' Insert an entry for each investor
+    ' with a NULL value for the metrics
+    '
+    ' =========================================
+    
+    ' YOUR CODE HERE
+    '
+    '
+
+End Sub
+
+
+Sub s18_update_investors_metrics()
+    ' ============================================
+    ' Update the table investors_metrics based on
+    ' the stocks they owe, their quantity, and
+    ' the stocks' value
+    '
+    ' This question requires the use of a JOIN
+    ' ============================================
+    
+    ' YOUR CODE HERE
+    '
+    '
+  
+End Sub
+
+
+Sub s19_drop_tables_all()
+    ' ==========================================
+    ' Drop all tables to reinitiate the database
+    ' ==========================================
+    
+    ' YOUR CODE HERE
+    '
+    '
+
+End Sub
+
