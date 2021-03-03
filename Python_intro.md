@@ -1,0 +1,3 @@
+- Apply good practices: https://gist.github.com/sloria/7001839
+- Use multiple files: main, function, settings
+- Use abstraction
