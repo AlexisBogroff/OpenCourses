@@ -22,3 +22,31 @@ General guidelines for many languages:
 with open('foo.txt') as f:
     print(next(f))
 '''
+
+
+## Generators
+
+### Standard builder
+'''Python
+class Count:
+    """Infinite count from zero"""
+
+    def __init__(self):
+        self.num = 0
+
+    def __iter__(self):
+        # Enables for loop calls
+        return self
+
+    def __next__(self):
+        # Here is the trick of generators
+        self.num += 1
+        return self.num
+'''
+
+### Quick builder
+'''Python
+def reverse(text):
+    for elem in text[::-1]:
+        yield elem
+'''
