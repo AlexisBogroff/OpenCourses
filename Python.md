@@ -45,16 +45,25 @@ class Count:
 ```
 
 ### Generators
+Generators are neat implementations of iterators
 
 #### Standard builder
 ```Python
-def reverse(text):
-    for elem in text[::-1]:
-        yield elem
+def count():
+    num=0
+    while True:
+        num+=1
+        yield num
 ```
 #### Quick builders
 ```Python
-generate_squares = (x**2 for x in num_list)
+# Further use with next
+gen_squares = (x**2 for x in num_list)
 
+# Instant result
 sum(x**2 for x in num_list)
 ```
+
+### References
+https://www.programiz.com/python-programming/iterator
+https://www.programiz.com/python-programming/generator
