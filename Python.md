@@ -65,5 +65,5 @@ sum(x**2 for x in num_list)
 ```
 
 ### References
-https://www.programiz.com/python-programming/iterator
-https://www.programiz.com/python-programming/generator
+- https://www.programiz.com/python-programming/iterator
+- https://www.programiz.com/python-programming/generator
