@@ -18,16 +18,16 @@ General guidelines for many languages:
 # Commands
 
 ## Files (I/O)
-'''Python
+‘‘‘Python
 with open('foo.txt') as f:
     print(next(f))
-'''
+‘‘‘
 
 
-## Generators
+## Iterators and Generators
 
-### Standard builder
-'''Python
+### Iterators
+‘‘‘Python
 class Count:
     """Infinite count from zero"""
 
@@ -42,11 +42,20 @@ class Count:
         # Here is the trick of generators
         self.num += 1
         return self.num
-'''
+‘‘‘
 
-### Quick builder
-'''Python
+### Generators
+
+#### Standard builder
+‘‘‘Python
 def reverse(text):
     for elem in text[::-1]:
         yield elem
-'''
+‘‘‘
+
+#### Quick builders
+‘‘‘Python
+generate_squares = (x**2 for x in num_list)
+
+sum(x**2 for x in num_list)
+‘‘‘
