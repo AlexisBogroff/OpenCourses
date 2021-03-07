@@ -13,3 +13,12 @@ General guidelines for many languages:
 - Respect naming conventions
 - To go further, see Clean Code (Uncle Bob)
 
+
+
+# Commands
+
+## Files (I/O)
+'''Python
+with open('foo.txt') as f:
+    print(next(f))
+'''
