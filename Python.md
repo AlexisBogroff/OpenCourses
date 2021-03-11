@@ -1,17 +1,24 @@
+# What you should know
+- Complete roadmap : https://coggle.it/diagram/XgtVOa6K4obH730X/t/%F0%9F%90%8D%F0%9F%92%BB-python-developer-roadmap-%F0%9F%92%BB%F0%9F%90%8D/0b172b9775a0f8f50c3cda856b4e3bd59c3f7c53f53f63282d116d69447072fe
+
+- Tools you'll spend hours with: https://missing.csail.mit.edu/
+
 # Good practices
 For anything, your code will be enhanced if you search for "good practices"
 
 ## Python
 Python good practices
+- PEP 8 (Python Enhancement Proposals)
 - General: https://gist.github.com/sloria/7001839
 
 ## Coding
 General guidelines for many languages:
+- Code should be ordered in scripts (declare then use)
 - Use multiple files: main, function, settings
-- Use abstraction
 - DRY: don't repeat yourself
+- Use abstraction
 - Respect naming conventions
-- To go further, see Clean Code (Uncle Bob)
+- To go further, see Clean Code (Uncle Bob : https://www.youtube.com/watch?v=7EmboKQH8lM)
 
 
 
@@ -64,6 +71,56 @@ gen_squares = (x**2 for x in num_list)
 sum(x**2 for x in num_list)
 ```
 
-### References
+#### References
 - https://www.programiz.com/python-programming/iterator
 - https://www.programiz.com/python-programming/generator
+
+
+## Decorators
+**The goal is to modify the behavior of the function**. For instance, it can add some condition that may call or block the initial function. It can also add other function calls before and after the initial function.
+
+### Example
+
+```Python
+# Define
+def func_origin(arg1):
+    pass
+
+func_origin = func_deco1(func_origin)
+
+# Call
+func_origin()
+```
+
+With *func_deco1* defined as follows:
+```Python
+def func_deco1(func):
+    def decorate():
+        print("do something before")
+        func()
+    return decorate
+```
+
+
+The following is used instead of the previous implementation in order to make it more obvious:
+```Python
+# Define
+def func_deco1(func):
+    def decorate():
+        print("do something before")
+        func()
+    return decorate
+
+@func_deco1
+def func_origin(arg1):
+    pass
+
+# Call
+func_origin()
+```
+
+
+
+### References
+- https://realpython.com/primer-on-python-decorators
+- https://www.python.org/dev/peps/pep-0318
