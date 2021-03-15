@@ -120,7 +120,18 @@ func_origin()
 ```
 
 
-
 ### References
 - https://realpython.com/primer-on-python-decorators
 - https://www.python.org/dev/peps/pep-0318
+
+
+# Main Libraries for Data Science
+
+## Pandas
+How to get a specific value in a DataFrame, and difference in the
+calling / setting method because of the chain indexing which either returns
+a view or a copy :
+- https://stackoverflow.com/questions/25254016/pandas-get-first-row-value-of-a-given-column
+
+Should one iterate over rows?
+- https://stackoverflow.com/questions/16476924/how-to-iterate-over-rows-in-a-dataframe-in-pandas
