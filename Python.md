@@ -10,6 +10,7 @@ For anything, your code will be enhanced if you search for "good practices"
 Python good practices
 - PEP 8 (Python Enhancement Proposals)
 - General: https://gist.github.com/sloria/7001839
+- Guidelines: https://www.python.org/dev/peps/pep-0020/
 
 ## Coding
 General guidelines for many languages:
