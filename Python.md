@@ -21,6 +21,11 @@ General guidelines for many languages:
 - Respect naming conventions
 - To go further, see Clean Code (Uncle Bob : https://www.youtube.com/watch?v=7EmboKQH8lM)
 
+# Python concepts
+
+## Concepts from New versions
+- https://python.plainenglish.io/killer-features-by-python-version-c84ca12dba8
+
 
 
 # Commands
