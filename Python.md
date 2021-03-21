@@ -27,6 +27,8 @@ General guidelines for many languages:
 - https://python.plainenglish.io/killer-features-by-python-version-c84ca12dba8
 
 
+## References
+- https://docs.python.org/fr/3/library/stdtypes.html#string-methods
 
 # Commands
 
