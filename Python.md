@@ -1,17 +1,9 @@
-# What you should know
-- Complete roadmap : https://coggle.it/diagram/XgtVOa6K4obH730X/t/%F0%9F%90%8D%F0%9F%92%BB-python-developer-roadmap-%F0%9F%92%BB%F0%9F%90%8D/0b172b9775a0f8f50c3cda856b4e3bd59c3f7c53f53f63282d116d69447072fe
+# To go further
+- Learn about software development, architecture, principles and good practices
+- Read documentation, and code of pairs (github, kaggle)
+- Train on code gaming platforms (codingame)
 
-- Tools you'll spend hours with: https://missing.csail.mit.edu/
-
-# Good practices
-For anything, your code will be enhanced if you search for "good practices"
-
-## Python
-Python good practices
-- PEP 8 (Python Enhancement Proposals)
-- General: https://gist.github.com/sloria/7001839
-
-## Coding
+# General Coding Practices
 General guidelines for many languages:
 - Code should be ordered in scripts (declare then use)
 - Use multiple files: main, function, settings
@@ -20,6 +12,25 @@ General guidelines for many languages:
 - Respect naming conventions
 - To go further, see Clean Code (Uncle Bob : https://www.youtube.com/watch?v=7EmboKQH8lM)
 
+
+# What you should know
+- Complete roadmap : https://coggle.it/diagram/XgtVOa6K4obH730X/t/%F0%9F%90%8D%F0%9F%92%BB-python-developer-roadmap-%F0%9F%92%BB%F0%9F%90%8D/0b172b9775a0f8f50c3cda856b4e3bd59c3f7c53f53f63282d116d69447072fe
+- Introduction to core tools: https://missing.csail.mit.edu/
+
+# Official References
+- Python Documentation: https://docs.python.org/3/
+- Tutorial glossary: https://docs.python.org/3/glossary.html#glossary
+- Tutorial: https://docs.python.org/3/tutorial/
+- Reference: https://docs.python.org/3/reference/index.html#reference-index
+- Built-in libraries glossary: https://docs.python.org/3/library/index.html#library-index
+- Portal: https://docs.python.org/3/tutorial/whatnow.html
+
+# Good practices and idioms
+For anything, your code will be enhanced if you search for "good practices",
+and will be closer to the generally accepted way of writing if you search for
+"idiomatic python".
+- PEP 8 (Python Enhancement Proposals)
+- General: https://gist.github.com/sloria/7001839
 
 
 # Commands
@@ -135,3 +146,96 @@ a view or a copy :
 
 Should one iterate over rows?
 - https://stackoverflow.com/questions/16476924/how-to-iterate-over-rows-in-a-dataframe-in-pandas
+
+
+# Advanced Python
+Deep dive into each intermediate concept by looking at its specificities, core
+parameters and good practices (python advanced dictionary / ...).
+
+## Intermediate Concepts
+- File wildcards
+- Private variables
+- single dispatch
+- __slots__
+- Qualified name
+- MRO (method resolution order)
+- Garbage collection
+- Assert
+- Typecasting
+- Pointers
+- Generators
+- Decorators
+- Closures
+- Cache
+- Special methods (= Magic methods)
+- Map / Filter / Reduce
+- Map / lambda
+- User-defined (callable) types
+- ABC
+- Operator overloading
+- Context managers
+- Coroutines
+- Concurrency
+- Callback
+- Multithread, multiprocessing
+- Deadlocks, Livelocks
+- With statement
+- Metaprogramming
+- Dynamic atttributes
+- Hashability
+- Lambda
+- Nested List / Dict Comprehension
+- *args, **kwargs
+- @staticmethod, @classmethod
+- Anonymous functions
+- Packaging, unpacking
+- Encodings, Unicode, bytes, binary bitwise operations
+- GIL (Global Interpreter Lock)
+- Shallow, deepcopy
+- Mocking
+- Iterators vs Iterables
+- Recursive functions
+- Memoisation (speed up recursive functions)
+- Variable scope: global, local and nonlocal
+- Zip
+- Currying
+- Cython extensions (https://realpython.com/cpython-source-code-guide/)
+- Amdahl's Law
+- Reduction operators
+- Starvation
+- Race conditions
+- Method resolution order
+- Super()
+- Weak references
+- Namespaces
+- Sockets
+- Serialization formats
+- Bidirectional communication
+- Exceptions (chaining)
+- Dunders
+- Cloning objects
+- Namedtuples
+- Records
+- Multisets
+- Sushi operator
+- Iterator chains
+- Sentinel value
+- Sort using key
+- __repr__
+- Shifting operations
+
+## Modules
+- Collections
+- Itertools
+- Functools
+- Numpy: fast array, numexpr
+- Pandas: views, copies
+- Asyncio
+- Dis
+- Futures
+- PyQt5
+- Decimal
+
+## Ressources
+- Python advanced practices: https://www.youtube.com/watch?v=OSGv2VnC0go
+- Python advanced book: https://effectivepython.com/
