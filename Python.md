@@ -2,6 +2,19 @@
 - Learn about software development, architecture, principles and good practices
 - Read documentation, and code of pairs (github, kaggle)
 - Train on code gaming platforms (codingame)
+# What you should know
+- Complete roadmap : https://coggle.it/diagram/XgtVOa6K4obH730X/t/%F0%9F%90%8D%F0%9F%92%BB-python-developer-roadmap-%F0%9F%92%BB%F0%9F%90%8D/0b172b9775a0f8f50c3cda856b4e3bd59c3f7c53f53f63282d116d69447072fe
+
+- Tools you'll spend hours with: https://missing.csail.mit.edu/
+
+# Good practices
+For anything, your code will be enhanced if you search for "good practices"
+
+## Python
+Python good practices
+- PEP 8 (Python Enhancement Proposals)
+- General: https://gist.github.com/sloria/7001839
+- Guidelines: https://www.python.org/dev/peps/pep-0020/
 
 # General Coding Practices
 General guidelines for many languages:
@@ -12,6 +25,7 @@ General guidelines for many languages:
 - Respect naming conventions
 - To go further, see Clean Code (Uncle Bob : https://www.youtube.com/watch?v=7EmboKQH8lM)
 
+# Python concepts
 
 # What you should know
 - Complete roadmap : https://coggle.it/diagram/XgtVOa6K4obH730X/t/%F0%9F%90%8D%F0%9F%92%BB-python-developer-roadmap-%F0%9F%92%BB%F0%9F%90%8D/0b172b9775a0f8f50c3cda856b4e3bd59c3f7c53f53f63282d116d69447072fe
@@ -32,6 +46,12 @@ and will be closer to the generally accepted way of writing if you search for
 - PEP 8 (Python Enhancement Proposals)
 - General: https://gist.github.com/sloria/7001839
 
+## Concepts from New versions
+- https://python.plainenglish.io/killer-features-by-python-version-c84ca12dba8
+
+
+## References
+- https://docs.python.org/fr/3/library/stdtypes.html#string-methods
 
 # Commands
 
