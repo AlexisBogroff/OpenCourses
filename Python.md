@@ -150,6 +150,26 @@ def func_origin(arg1):
 func_origin()
 ```
 
+## Args & Kwargs
+```Python
+def test(x, y, z=None, *args, **kwargs):
+    print(x)
+    print(y)
+    print(z)
+    for arg in args:
+        print("arg :", arg)
+    for kwarg in kwargs:
+        print("kwarg", kwarg)
+
+print("Args only")
+test(1, 2, 3, 4, 5, 6)
+
+print("\nKwargs only")
+test(x=1, y=2, j=3, v=4, z=5, l=6)
+
+print("\nArgs and kwargs")
+test(1, 2, 3, 4, n=5, l=6)
+```
 
 ### References
 - https://realpython.com/primer-on-python-decorators
